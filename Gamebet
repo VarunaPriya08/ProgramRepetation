@@ -1,0 +1,12 @@
+#! /bin/bash -x
+read -p "Enter the number between 1 to 100:"num
+i=1
+
+while [ $i -ne 100 ]
+do 
+	if [ $i -eq $num ]
+	then
+		echo $i
+	fi
+((i++))
+done
